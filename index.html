@@ -1,81 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teesha panchal - Portfolio </title>
-   
+    <title>Teesha Panchal - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <span class="logo"> Teesha panchal </span>
+
+    <!-- HEADER -->
+    <header class="header">
+        <span class="logo">Teesha Panchal</span>
 
         <nav>
-            <a href="#home"> Home</a>
-            <a href="#about"> About</a>
-            <a href="#skills"> Skills</a>
-            <a href="#projects"> Projects</a>
-            <a href="#contact"> Contact</a>
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
-
     </header>
 
     <main>
-        <section id="hero">
-            <h1>Hi, I'm Teesha Panchal</h1>
-            <p>I'm currently pursuing BSC-IT in Shreyarth University </p>
-            
 
-            <img src="./Assets/PICTURE.jpeg" alt="Profile Photo" class="profile-photo">
+        <!-- HERO -->
+        <section id="hero" class="hero">
+            <div class="hero-text">
+                <h1>Hi, I'm <span>Teesha Panchal</span></h1>
+                <p>I'm currently pursuing BSC-IT in Shreyarth University</p>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+
+            <div class="hero-img">
+                <img src="./Assets/PICTURE.jpeg" alt="Profile Photo">
+            </div>
         </section>
 
-        <section id="about">
+        <!-- ABOUT -->
+        <section id="about" class="about">
             <h2>About Me</h2>
-            <p>I'm a dedicated full-stack developer who loves turning ideas into smooth, user-friendly applications.</p>
-            <p>When I'm not coding, you'll find me exploring new cafés or enjoying a peaceful walk.</p>
+
+            <div class="about-card">
+                <p>
+                    I am a dedicated full-stack developer with a strong passion for creating clean, efficient, and user-friendly web applications. I focus on writing high-quality code, improving performance, and building interfaces that deliver a smooth user experience. I am skilled in Python, PHP, JavaScript, C/C++ and HTML for building modern web applications, and I continuously explore new technologies to enhance my development approach. My goal is to turn ideas into reliable, visually appealing digital solutions.
+                </p>
+                
+            </div>
         </section>
 
-        <section id="skills">
-        <h2>My Skills</h2>
-        
-            <ul class="skills-list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Python</li>
-                <li>PHP</li>
-                <li>Javascript</li>
-            </ul>
+        <!-- SKILLS -->
+        <section id="skills" class="skills">
+            <h2>My Skills</h2>
+
+            <div class="skills-list">
+                <span>Python</span>
+                <span>PHP</span>
+                <span>Javascript</span>
+                <span>C/C++</span>
+                <span>HTML</span>
+            </div>
         </section>
-        
-        <section id="projects">
+
+        <!-- PROJECTS -->
+        <section id="projects" class="projects">
             <h2>My Projects</h2>
-                <div class="projects-grid">
-                    <article class="card">
-                        <h3>Portfolio Website</h3>
-                            <p>A full-stack portfolio with Python, PHP, HTML,</p>
-                                <a href="#">Live Demo </a>
-                                <a href="#">GitHub </a>
-                    </article>
+
+            <div class="projects-grid">
+
+                <div class="card">
+                    <h3>TaskTrack</h3>
+                    <p>A responsive task-management app built using HTML, CSS, and JavaScript where users can create tasks, set deadlines, and track daily productivity.</p>
                 </div>
+
+                <div class="card">
+                    <h3>Personal Expense Tracker</h3>
+                    <p>A finance-tracking web app where users can record expenses, categorize spending, and visualize monthly trends using charts.</p>
+                </div>
+
+                <div class="card">
+                    <h3>FleetFlow Management System</h3>
+                    <p><p>A Python-based fleet management system for tracking vehicles, assigning trips, and monitoring maintenance to improve operational efficiency.
+                </div>
+
+            </div>
         </section>
 
-        <section id="contact">
-                <h2>Get In Touch</h2>
-            
-                <form action="#" method="POST" class="contact-form">
-                    <input type="text" name="name" placeholder="Your Name" required>
+        <!-- CONTACT -->
+        <section id="contact" class="contact-section">
 
-                    <input type="email" name="email" placeholder="Your Email" required>
+            <h2 class="contact-title">Get In Touch</h2>
+            <p class="contact-subtitle">
+                Feel free to contact me for opportunities, collaborations, or questions!
+            </p>
 
-                    <textarea name="message" placeholder="Your Message" rows="2" required></textarea>
+            <div class="contact-container">
 
-                    <button type="submit">Send Message</button>
+                <!-- Left Info -->
+                <div class="contact-info-box">
+                    <h2>Contact Information</h2>
+                
+                <div>
+                    <p>You can reach me anytime via the details below.</p>
+                </div>
+                    <div class="info-item">📧 teeshapanchal@gmail.com</div>
+                    <div class="info-item">📍 Ahmedabad, India</div>
+                </div>
+
+                <!-- Right Form -->
+                <form class="contact-form-box">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Your Email</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Your Subject</label>
+                        <input type="text" placeholder="Type your subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea placeholder="Write your message..." rows="3" required></textarea>
+                    </div>
+
+                    <button type="submit" class="send-btn">Send Message</button>
                 </form>
+            </div>
         </section>
-    </main>
-    
 
-   
+    </main>
+
 </body>
 </html>
